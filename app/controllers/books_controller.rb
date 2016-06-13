@@ -67,8 +67,8 @@ class BooksController < ApplicationController
   end
 
   def view_helper_test
-    @books = Book.where(cd: false)
-    render :index
+    #@books = Book.where(cd: false)
+    #render :index
   end
 
 
