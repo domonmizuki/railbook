@@ -7,15 +7,10 @@
 <%= radio_button :user, :color,"red" %>赤
 <%= radio_button :user, :color,"blue" %>青
 <%= radio_button :user, :color,"yellow" %>黄
-<br><%= check_box :book, :cd, {}, 0, 1 %></br>]
+<br><%= check_box :book, :cd, {}, 0, 1 %></br>
 <br><%= link_to 'Back', books_path %></br>  
 <br><%= text_area :book, :memo %></br>  
-<br><%= select :user, :address, ["出雲市","雲南市"] %></br>  
-<br>  
-<select id="book_publish" name="book[publish]">  
- <option value="1">技術評論社</option>  
- <option value="2">マイナビ</option>  
- </select>  
- </br>  
- <br><%= image_tag 'dakue.png' %></br>  
+<br><%= select :user, :address, ["出雲市","雲南市","松江市"] %></br>  
+</br><%= collection_select(:book, :publish, Book.all, :id, :publish) %>
+<br><%= image_tag 'dakue.png' %></br>  
 
