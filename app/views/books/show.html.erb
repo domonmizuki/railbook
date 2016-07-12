@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Publish:</strong>
-  <%= @book.publish_id %>
+  <strong>Publishname:</strong>
+  <%= @book.publish.publishname %>
 </p>
 
 <p>
@@ -33,7 +33,7 @@
 <h2>評判</h2>
 <u1>
 <% @book.reviews.each do |review| %>
-  <l1><%= review.body %></l1>
+  <l1><%= review.body %>(<%= review.user.username %>)</l1>
 <% end %>
 </u1>
 
