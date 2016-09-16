@@ -13,7 +13,9 @@
  <li><%= link_to "出版社一覧",publishes_path %></li>
  <li><%= link_to "レビュー一覧",reviews_path %></li>
  <li><%= link_to "ユーザー一覧",users_path %></li>
-
+ <div align = "right">
+   ログインユーザー：<%= session[:usrn] %>
+ </div>
 </ul>
 
 <%= yield %>
