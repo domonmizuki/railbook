@@ -16,7 +16,8 @@
       #セッションに対象のユーザーネームを保存
       session[:usrn] = usr.username
       # 指定のリダイレクト先へ移動
-      redirect_to params[:referer]
+      #redirect_to params[:referer]
+      redirect_to books_url
      else
       flash.now[:referer] = params[:referer]
       @error = 'ユーザーのID/パスワードが間違っています。'

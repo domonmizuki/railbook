@@ -15,6 +15,8 @@
  <li><%= link_to "ユーザー一覧",users_path %></li>
  <div align = "right">
    ログインユーザー：<%= session[:usrn] %>
+   <%= link_to "ログアウト",controller: :login,action: :index %>
+
  </div>
 </ul>
 
